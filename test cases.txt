@@ -1,0 +1,12 @@
+Test cases:      
+
+1. If you enter a long URL it should always return a short URL back.
+2. If you use a TinyURL it should always navigate to the original long URL
+3. Empty URL. Result should be an exception no TinyUrl returned. In UI we show the message box.
+4. Simple validation of a long Url. Make sure it starts with http.
+5. If you enter exciting long Url it should return already created TinyUrl, shouldn't create a new one.
+6. if we put a very very long Url it should still return a TinyUrl. No limitation in size.
+7. It should never create a duplicate TinyUrl. I am writing an API that will call create TinyUrl in the loop,
+   like several million times, i would store created TinyUrls in the hashset. This should throw an exception if it 
+   detects a duplicate. 
+ 

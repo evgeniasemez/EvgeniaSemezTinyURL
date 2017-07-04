@@ -1,0 +1,12 @@
+C:\Evgenia\TinyUrl\WpfApplication1\obj\Debug\MainWindow.baml
+C:\Evgenia\TinyUrl\WpfApplication1\obj\Debug\MainWindow.g.cs
+C:\Evgenia\TinyUrl\WpfApplication1\obj\Debug\App.g.cs
+C:\Evgenia\TinyUrl\WpfApplication1\obj\Debug\EvgeniasTinyurlTestApp_MarkupCompile.cache
+C:\Evgenia\TinyUrl\WpfApplication1\obj\Debug\EvgeniasTinyurlTestApp.g.resources
+C:\Evgenia\TinyUrl\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+C:\Evgenia\TinyUrl\WpfApplication1\obj\Debug\TinyURL.csproj.GenerateResource.Cache
+C:\Evgenia\TinyUrl\WpfApplication1\bin\Debug\EvgeniasTinyurlTestApp.exe.config
+C:\Evgenia\TinyUrl\WpfApplication1\bin\Debug\EvgeniasTinyurlTestApp.exe
+C:\Evgenia\TinyUrl\WpfApplication1\bin\Debug\EvgeniasTinyurlTestApp.pdb
+C:\Evgenia\TinyUrl\WpfApplication1\obj\Debug\EvgeniasTinyurlTestApp.exe
+C:\Evgenia\TinyUrl\WpfApplication1\obj\Debug\EvgeniasTinyurlTestApp.pdb

@@ -1,0 +1,89 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Evgenia's Tinyurl Test App" Height="800" Width="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        
+        <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+            BorderBrush="Black" BorderThickness="1"  Grid.Column="2">
+            <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Border HorizontalAlignment="Stretch" BorderThickness="0"  Grid.Row="0">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Border HorizontalAlignment="Stretch" BorderThickness="0"  Grid.Column="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                            <Label Name="label2" Width = "143" VerticalAlignment="Center" FontSize="14" FontWeight="DemiBold">Add Long Url</Label>
+                                            <TextBox Name="URL" TextWrapping="Wrap" Width = "500" Height="30" Margin="5" FontSize="12" FontWeight="Bold"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                            <Label Name="label10" Width = "150" VerticalAlignment="Center" FontSize="14" FontWeight="DemiBold">Navigate To Tiny Url</Label>
+                                            <TextBox Name="NavigateToUrl" VerticalAlignment="Center" Width = "500" Height="30" Margin="0" FontSize="12" FontWeight="Bold"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+                                            <Label Name="InformationText" Width="600" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="DarkOrchid" FontSize="14" FontWeight="DemiBold"></Label>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                                <Border HorizontalAlignment="Stretch" BorderThickness="0"  Grid.Column="1">
+                                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                        <Button Name="CreateTinyUrl" Width="150" Height="23" Margin="5" FontSize="12" FontWeight="Bold" Click="CreateTinyUrl_Click">Create TinyUrl</Button>
+                                        <Popup Name="MyPopup" Placement="Absolute" HorizontalOffset="250" VerticalOffset="100" AllowsTransparency="False">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+                                                <TextBox Width="800" Height="600" Grid.Row="0" Name="SOAPXml" FontSize="14" FontWeight="Light" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible"></TextBox>
+                                            </Grid>
+                                        </Popup>
+                                        <Button Name="Navigate" Width="150" Height="23"  Margin="5" Click="Navigate_Click"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" FontWeight="Bold">Navigate</Button>
+                                        <Popup Name="WebBrowserPopup" Placement="Absolute" HorizontalOffset="120" VerticalOffset="100" AllowsTransparency="False">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+                                                <WebBrowser Name="MainBrowser" HorizontalAlignment="Center" Width="750" Height="600" Margin="10,10,0,0" Grid.Row="0" VerticalAlignment="Top"/>
+                                                <Border HorizontalAlignment="Stretch" BorderThickness="0"  Grid.Row="1">
+                                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+														<Button Name="HideMainBrowser" Click="HideMainBrowser_Click"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" FontSize="14" Foreground="Purple" FontWeight="Bold" Margin="10">Close Browser</Button>
+                                                    </StackPanel>
+                                                </Border>
+                                            </Grid>
+                                        </Popup>
+                                    </StackPanel>
+                                </Border>
+                                <Border HorizontalAlignment="Stretch" BorderThickness="0"  Grid.Column="2">
+                                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+										<Label Name="Placeholder" Width="60" Height="3" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="DarkOrchid" FontSize="14" FontWeight="DemiBold"></Label>
+									</StackPanel>
+                                </Border>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                    <TextBox Width="900" Height="650" Grid.Row="1" Name="Results" FontSize="14" FontWeight="Light" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible"></TextBox>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
